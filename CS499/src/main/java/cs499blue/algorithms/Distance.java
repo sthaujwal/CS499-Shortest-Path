@@ -9,14 +9,23 @@ import cs499blue.models.Vertex;
  */
 
 public class Distance {
-
+      private static Set<Edge> edges;
     //returns the distance from a to b
     public static Double distanceFrom(Vertex a, Vertex b) {
-        throw new UnsupportedOperationException("Not Yet Implemented");
+        for(Edge e: edges){
+            if(e.getA().equals(a)&& e.getB().equals(b)){
+                return edge.getWeight();
+                }
+        }
+        
+        
+        throw new UnsupportedOperationException("shouldn't occur");
     }
 
     //returns the length of e
     public static Double lengthOf(Edge e) {
-        throw new UnsupportedOperationException("Not Yet Implemented");
-    }
+        double x = e.getA();
+        double y = e.getB();
+        return distanceFrom(x, y)
+    
 }
